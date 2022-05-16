@@ -9,3 +9,11 @@ var lower = stringAlgo.IsLowerCase("hello");
 var upper = stringAlgo.IsUpperCase("HELLO");
 Console.WriteLine(lower);
 Console.WriteLine(upper);
+
+// for Password complexity validation
+
+var password1 = stringAlgo.IsPasswordComplex("1Aa!");
+var password2 = stringAlgo.IsPasswordComplex("Admin");
+
+Console.WriteLine(password1);
+Console.WriteLine(password2);

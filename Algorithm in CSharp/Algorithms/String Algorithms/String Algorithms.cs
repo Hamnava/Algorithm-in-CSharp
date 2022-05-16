@@ -17,5 +17,10 @@ namespace Algorithm_in_CSharp.Algorithms.String_Algorithms
         {
             return s.All(char.IsLower);
         }
+
+        public Boolean IsPasswordComplex(string s)
+        {
+            return s.Any(char.IsDigit) && s.Any(char.IsUpper) && s.Any(char.IsLower);
+        }
     }
 }
