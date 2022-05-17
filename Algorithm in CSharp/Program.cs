@@ -3,6 +3,8 @@ using Algorithm_in_CSharp.Algorithms.String_Algorithms;
 
 Console.WriteLine("Hi form the program!");
 
+#region String Algorithm
+
 String_Algorithms stringAlgo = new String_Algorithms();
 
 var lower = stringAlgo.IsLowerCase("hello");
@@ -17,3 +19,6 @@ var password2 = stringAlgo.IsPasswordComplex("Admin");
 
 Console.WriteLine(password1);
 Console.WriteLine(password2);
+
+#endregion
+
