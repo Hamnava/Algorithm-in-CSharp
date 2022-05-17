@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Algorithm_in_CSharp.Algorithms.Array_Algorithms;
+using Algorithm_in_CSharp.Algorithms.Linkedlist;
 using Algorithm_in_CSharp.Algorithms.String_Algorithms;
 
 Console.WriteLine("Hi form the program!");
@@ -62,7 +63,13 @@ int[] arr2 = { 1,2, 3, 4,5, 6, 7,8, 9 };
 //Reverse 
 //var result = arrayAlgorithms.Reverse(arr);
 //Array.ForEach(result, Console.WriteLine);
-arrayAlgorithms.RotateArray(arr2);
-Array.ForEach(arr2,Console.WriteLine);
+//arrayAlgorithms.RotateArray(arr2);
+//Array.ForEach(arr2,Console.WriteLine);
 
+#endregion
+
+
+#region LinkedList
+LinkedIistPart linked = new LinkedIistPart();
+linked.strLinkedList();
 #endregion
