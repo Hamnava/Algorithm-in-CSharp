@@ -53,4 +53,6 @@ int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 Console.WriteLine(arrayAlgorithms.BinarySearch(arr,7));
 
+Console.WriteLine(Array.BinarySearch(arr, 5));
+
 #endregion
