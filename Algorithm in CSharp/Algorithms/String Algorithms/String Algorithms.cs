@@ -27,5 +27,21 @@ namespace Algorithm_in_CSharp.Algorithms.String_Algorithms
         {
             return input.ToLower().Trim().Replace(",", "");
         }
+
+        // Reverse
+        public string Reversed(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return input;
+            }
+
+            StringBuilder reversed = new StringBuilder(input.Length);
+            for(int i = input.Length-1; i>=0; i--)
+            {
+                reversed.Append(input[i]);
+            }
+            return reversed.ToString();
+        }
     }
 }

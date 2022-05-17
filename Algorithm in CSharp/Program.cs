@@ -22,5 +22,6 @@ Console.WriteLine(password2);
 
 Console.WriteLine(stringAlgo.NormalizeString(" Hey there, BUDDY  "));
 
+Console.WriteLine(stringAlgo.Reversed("Hamnava"));
 #endregion
 
