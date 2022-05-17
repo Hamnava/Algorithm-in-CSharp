@@ -55,5 +55,25 @@ namespace Algorithm_in_CSharp.Algorithms.String_Algorithms
             Array.Reverse(chars);
             return new string(chars);
         }
+
+        public string ReverseEachWord(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return input;
+            }
+            string[] words = input.Split(" ");
+            StringBuilder resutl = new StringBuilder();
+            for(int i = 0; i < words.Length; i++)
+            {
+                resutl.Append(Reverse(words[i]));
+                if(i< words.Length - 1)
+                {
+                    resutl.Append(" ");
+                }
+            }
+
+            return resutl.ToString();
+        }
     }
 }

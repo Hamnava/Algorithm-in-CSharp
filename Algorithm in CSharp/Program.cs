@@ -30,5 +30,9 @@ Console.WriteLine(stringAlgo.Reversed("tamen"));
 Console.WriteLine(stringAlgo.Reverse("Hamnava"));
 Console.WriteLine(stringAlgo.Reverse("olleh"));
 Console.WriteLine(stringAlgo.Reverse("tamen"));
+
+Console.WriteLine(stringAlgo.ReverseEachWord("Helly my babby, I love you"));
+Console.WriteLine(stringAlgo.ReverseEachWord("Hey Scott, Nice to meet You"));
+Console.WriteLine(stringAlgo.ReverseEachWord("I'm Coming..."));
 #endregion
 
