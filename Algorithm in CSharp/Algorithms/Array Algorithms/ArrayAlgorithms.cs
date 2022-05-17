@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,6 +42,30 @@ namespace Algorithm_in_CSharp.Algorithms.Array_Algorithms
             }
 
             return false;
+        }
+
+        // Aggregate arrays into one array
+        public int[] FindEvenNumbers(int[] arr1, int[] arr2)
+        {
+            ArrayList result = new ArrayList();
+
+            foreach (var item in arr1)
+            {
+                if (item % 2 == 0)
+                {
+                    result.Add(item);
+                }
+            }
+
+            foreach (var item in arr2)
+            {
+                if (item % 2 == 0)
+                {
+                    result.Add(item);
+                }
+            }
+
+            return (int[])(result.ToArray((typeof(int))));
         }
     }
 }
