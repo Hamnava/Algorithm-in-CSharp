@@ -67,5 +67,17 @@ namespace Algorithm_in_CSharp.Algorithms.Array_Algorithms
 
             return (int[])(result.ToArray((typeof(int))));
         }
+
+        //Reverse Algorithm for array
+        public int[] Reverse(int[] input)
+        {
+            int[] reverse = new int[input.Length];
+
+            for (int i = 0; i < reverse.Length; i++)
+            {
+                reverse[i] = input[input.Length - i -1];
+            }
+            return reverse;
+        }
     }
 }

@@ -56,7 +56,11 @@ int[] arr2 = { 1,2, 3, 4,5, 6, 7,8, 9 };
 
 //Console.WriteLine(Array.BinarySearch(arr, 5));
 
-int[] evenNummber = arrayAlgorithms.FindEvenNumbers(arr, arr2);
-Array.ForEach(evenNummber, Console.WriteLine);
+//int[] evenNummber = arrayAlgorithms.FindEvenNumbers(arr, arr2);
+//Array.ForEach(evenNummber, Console.WriteLine);
+
+//Reverse 
+var result = arrayAlgorithms.Reverse(arr);
+Array.ForEach(result, Console.WriteLine);
 
 #endregion
