@@ -22,6 +22,13 @@ Console.WriteLine(password2);
 
 Console.WriteLine(stringAlgo.NormalizeString(" Hey there, BUDDY  "));
 
+// Reverse a string chars
 Console.WriteLine(stringAlgo.Reversed("Hamnava"));
+Console.WriteLine(stringAlgo.Reversed("olleh"));
+Console.WriteLine(stringAlgo.Reversed("tamen"));
+
+Console.WriteLine(stringAlgo.Reverse("Hamnava"));
+Console.WriteLine(stringAlgo.Reverse("olleh"));
+Console.WriteLine(stringAlgo.Reverse("tamen"));
 #endregion
 

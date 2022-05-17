@@ -43,5 +43,17 @@ namespace Algorithm_in_CSharp.Algorithms.String_Algorithms
             }
             return reversed.ToString();
         }
+
+        public string Reverse(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return input;
+            }
+
+            char[] chars = input.ToCharArray();
+            Array.Reverse(chars);
+            return new string(chars);
+        }
     }
 }
