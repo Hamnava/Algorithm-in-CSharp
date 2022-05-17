@@ -20,5 +20,7 @@ var password2 = stringAlgo.IsPasswordComplex("Admin");
 Console.WriteLine(password1);
 Console.WriteLine(password2);
 
+Console.WriteLine(stringAlgo.NormalizeString(" Hey there, BUDDY  "));
+
 #endregion
 

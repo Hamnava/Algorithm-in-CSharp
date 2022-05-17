@@ -22,5 +22,10 @@ namespace Algorithm_in_CSharp.Algorithms.String_Algorithms
         {
             return s.Any(char.IsDigit) && s.Any(char.IsUpper) && s.Any(char.IsLower);
         }
+
+        public string NormalizeString(string input)
+        {
+            return input.ToLower().Trim().Replace(",", "");
+        }
     }
 }
