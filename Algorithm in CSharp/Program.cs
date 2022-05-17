@@ -60,7 +60,9 @@ int[] arr2 = { 1,2, 3, 4,5, 6, 7,8, 9 };
 //Array.ForEach(evenNummber, Console.WriteLine);
 
 //Reverse 
-var result = arrayAlgorithms.Reverse(arr);
-Array.ForEach(result, Console.WriteLine);
+//var result = arrayAlgorithms.Reverse(arr);
+//Array.ForEach(result, Console.WriteLine);
+arrayAlgorithms.RotateArray(arr2);
+Array.ForEach(arr2,Console.WriteLine);
 
 #endregion

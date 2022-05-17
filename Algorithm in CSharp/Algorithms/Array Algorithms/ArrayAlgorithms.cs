@@ -79,5 +79,16 @@ namespace Algorithm_in_CSharp.Algorithms.Array_Algorithms
             }
             return reverse;
         }
+
+        public void RotateArray(int[] input)
+        {
+            int temp = input[0];
+            for (int i = 0; i < input.Length -1; i++)
+            {
+                input[i] = input[i + 1];
+            }
+
+            input[input.Length - 1] = temp;
+        }
     }
 }
