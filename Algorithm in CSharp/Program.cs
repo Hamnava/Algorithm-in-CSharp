@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Algorithm_in_CSharp.Algorithms.Array_Algorithms;
 using Algorithm_in_CSharp.Algorithms.String_Algorithms;
 
 Console.WriteLine("Hi form the program!");
@@ -36,3 +37,11 @@ Console.WriteLine(stringAlgo.ReverseEachWord("Hey Scott, Nice to meet You"));
 Console.WriteLine(stringAlgo.ReverseEachWord("I'm Coming..."));
 #endregion
 
+
+#region Array Algorithms
+ArrayAlgorithms arrayAlgorithms = new ArrayAlgorithms();
+int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+Console.WriteLine(arrayAlgorithms.LinearSearch(arr, 3));
+Console.WriteLine(arrayAlgorithms.LinearSearch(arr, 0));
+#endregion
