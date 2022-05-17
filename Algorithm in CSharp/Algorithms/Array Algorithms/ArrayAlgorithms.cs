@@ -19,5 +19,28 @@ namespace Algorithm_in_CSharp.Algorithms.Array_Algorithms
             }
             return false;
         }
+
+        public Boolean BinarySearch(int[] binarSearch, int item)
+        {
+            int min = 0;
+            int max = binarSearch.Length - 1;
+
+            while (min <= max)
+            {
+                int mid = (min + max) / 2;
+                if(item == binarSearch[mid]) return true;
+
+                else if(item < binarSearch[mid])
+                {
+                    max = mid - 1;
+                }
+                else
+                {
+                    min = mid + 1;
+                }
+            }
+
+            return false;
+        }
     }
 }

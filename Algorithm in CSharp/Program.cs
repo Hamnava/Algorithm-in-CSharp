@@ -42,13 +42,15 @@ Console.WriteLine("Hi form the program!");
 ArrayAlgorithms arrayAlgorithms = new ArrayAlgorithms();
 int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-Console.WriteLine(arrayAlgorithms.LinearSearch(arr, 3));
-Console.WriteLine(arrayAlgorithms.LinearSearch(arr, 0));
+//Console.WriteLine(arrayAlgorithms.LinearSearch(arr, 3));
+//Console.WriteLine(arrayAlgorithms.LinearSearch(arr, 0));
 
-int item = Array.Find(arr, element=> element == 3);
-Console.WriteLine(item);
+//int item = Array.Find(arr, element=> element == 3);
+//Console.WriteLine(item);
 
-int[] items = Array.FindAll(arr, element=> element >=5);
-Array.ForEach(items, item => Console.WriteLine(item));
+//int[] items = Array.FindAll(arr, element=> element >=5);
+//Array.ForEach(items, item => Console.WriteLine(item));
+
+Console.WriteLine(arrayAlgorithms.BinarySearch(arr,7));
 
 #endregion
