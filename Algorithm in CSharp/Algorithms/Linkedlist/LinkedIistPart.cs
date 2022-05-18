@@ -1,13 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Algorithm_in_CSharp.Algorithms.Linkedlist
 {
+    public class CustomLinkedList
+    {
+       public Node head;
+
+        public class Node
+        {
+            public int data;
+            public Node next;
+
+            public Node(int d)
+            {
+                data = d;
+            }
+        }
+
+        public void DisplayNods()
+        {
+            var current = head;
+            while (current != null)
+            {
+                Console.Write(current.data + " -> ");
+                current = current.next;
+            }
+        }
+    }
     public class LinkedIistPart
     {
+        
+
         public void strLinkedList()
         {
             LinkedList<string> list = new LinkedList<string>();
@@ -22,8 +45,9 @@ namespace Algorithm_in_CSharp.Algorithms.Linkedlist
             list.RemoveFirst();
             foreach (var item in list)
             {
-                Console.WriteLine(item + "---------->");
+                Console.Write(item + " ----------> ");
             }
+            Console.WriteLine();
         }
 
     }
