@@ -17,6 +17,22 @@ namespace Algorithm_in_CSharp.Algorithms.Linkedlist
             }
         }
 
+
+        public void DeleteBackHalf()
+        {
+            if(head == null || head.next == null) head = null;
+            Node slow = head;
+            Node fast = head;
+            Node prev = null;
+
+            while(fast != null && fast.next != null)
+            {
+                prev = slow;
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+            prev.next = null;
+        }
         public void DisplayNods()
         {
             var current = head;

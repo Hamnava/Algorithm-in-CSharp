@@ -86,4 +86,8 @@ secondNode.next = thirdNode;
 thirdNode.next = fourthNode;
 
 customLinkedList.DisplayNods();
+customLinkedList.DeleteBackHalf();
+Console.WriteLine();
+customLinkedList.DisplayNods();
+
 #endregion
