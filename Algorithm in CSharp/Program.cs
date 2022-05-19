@@ -100,4 +100,9 @@ int[] arr2 = { 1,2, 3, 4,5, 6, 7,8, 9 };
 CustomeQeue customeQeue = new CustomeQeue();
 customeQeue.Classmates();
 
+customeQeue.printBinary(5);
+customeQeue.printBinary(-6);
+customeQeue.printBinary(0);
+customeQeue.printBinary(8);
+
 #endregion

@@ -27,6 +27,24 @@ namespace Algorithm_in_CSharp.Algorithms.Qeue_And_Stack
             }
         }
         
+
+        public void printBinary(int n)
+        {
+            if (n <= 0) return;
+
+            Queue<int> binary = new Queue<int>();
+            binary.Enqueue(1);
+
+            for (int i = 0; i < n; i++)
+            {
+                int current = binary.Dequeue();
+                Console.WriteLine(current);
+                binary.Enqueue(current * 10);
+                binary.Enqueue(current * 10 + 1);
+            }
+
+            Console.WriteLine();
+        }
         
     }
 }
