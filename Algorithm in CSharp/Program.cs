@@ -86,7 +86,8 @@ secondNode.next = thirdNode;
 thirdNode.next = fourthNode;
 
 customLinkedList.DisplayNods();
-customLinkedList.DeleteBackHalf();
+//customLinkedList.DeleteBackHalf();
+customLinkedList.DeleteKthNodeFromEnd(2);
 Console.WriteLine();
 customLinkedList.DisplayNods();
 

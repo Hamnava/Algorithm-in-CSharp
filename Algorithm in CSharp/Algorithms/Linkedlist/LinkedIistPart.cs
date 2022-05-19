@@ -17,7 +17,41 @@ namespace Algorithm_in_CSharp.Algorithms.Linkedlist
             }
         }
 
+        public void DeleteKthNodeFromEnd(int k)
+        {
+            if (head == null || k == 0) return;
+            // [a,b,c,d]
+            // k = 2
+            Node first = head;
+            Node second = head;
 
+            for (int i = 0; i < k; i++)
+            {
+                second = second.next;
+                if (second.next == null)
+                {
+                    // k >= length of list
+                    if(i == k - 1)
+                    {
+                        head = head.next;
+                    }
+                    return;
+                }
+
+            }
+
+           // second = c
+
+            while (second != null)
+            {
+                first = first.next;
+                second = second.next;
+            }
+            // first = b
+            // second = d
+
+            first.next = first.next.next;
+        }
         public void DeleteBackHalf()
         {
             if(head == null || head.next == null) head = null;
