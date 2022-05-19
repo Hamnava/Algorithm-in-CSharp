@@ -42,7 +42,7 @@ namespace Algorithm_in_CSharp.Algorithms.Linkedlist
 
            // second = c
 
-            while (second != null)
+            while (second.next != null)
             {
                 first = first.next;
                 second = second.next;
