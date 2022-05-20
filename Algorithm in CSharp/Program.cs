@@ -107,6 +107,19 @@ int[] arr2 = { 1,2, 3, 4,5, 6, 7,8, 9 };
 
 
 CustomStack stack = new CustomStack();
-stack.BultInStack();
+//stack.BultInStack();
+
+int[] arr1 = { 11, 2, 3, 14, 5, };
+int[] arr3 = { 1, 21, 3 };
+int[] arr4 = { 1, 2 };
+int[] arr5 = { 1 };
+int[] arr6 = {  };
+
+stack.PrintNextGreaterElement(arr1);
+stack.PrintNextGreaterElement(arr3);
+stack.PrintNextGreaterElement(arr4);
+stack.PrintNextGreaterElement(arr5);
+stack.PrintNextGreaterElement(arr6);
+
 
 #endregion
