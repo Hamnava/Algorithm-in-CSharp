@@ -121,5 +121,6 @@ CustomStack stack = new CustomStack();
 //stack.PrintNextGreaterElement(arr5);
 //stack.PrintNextGreaterElement(arr6);
 
+stack.Solution("<><<");
 
 #endregion

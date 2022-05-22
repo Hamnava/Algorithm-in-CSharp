@@ -71,6 +71,46 @@ namespace Algorithm_in_CSharp.Algorithms.Qeue_And_Stack
             }
         }
 
-      
+        public string Solution(string angles)
+        {
+            // Type your solution here
+
+            int openCount = 0;
+            int additionalLeadingOpenTags = 0;
+
+            foreach (char c in angles)
+            {
+                if (c == '>')
+                {
+                    if (openCount == 0)
+                    {
+                        additionalLeadingOpenTags++;
+                    }
+                    else
+                    {
+                        openCount--;
+                    }
+                }
+                else
+                {
+                    openCount++;
+                }
+            }
+
+            StringBuilder result = new StringBuilder();
+            while (additionalLeadingOpenTags > 0)
+            {
+                result.Append("<");
+                additionalLeadingOpenTags--;
+            }
+            result.Append(angles);
+            while (openCount > 0)
+            {
+                result.Append(">");
+                openCount--;
+            }
+            Console.WriteLine(result.ToString());
+            return result.ToString();
+        }
     }
 }
