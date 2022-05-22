@@ -30,7 +30,7 @@ namespace Algorithm_in_CSharp.Algorithms.Qeue_And_Stack
             Console.WriteLine("End " + stack.Pop());
         }
 
-       public void PrintNextGreaterElement(int[] arr)
+        public void PrintNextGreaterElement(int[] arr)
         {
             if (arr.Length <= 0)
             {
@@ -44,7 +44,7 @@ namespace Algorithm_in_CSharp.Algorithms.Qeue_And_Stack
             for (int i = 1; i < arr.Length; i++)
             {
                 int next = arr[i];
-                if(stack.Count > 0)
+                if (stack.Count > 0)
                 {
                     int popped = stack.Pop();
                     while (popped < next)
@@ -57,18 +57,20 @@ namespace Algorithm_in_CSharp.Algorithms.Qeue_And_Stack
                         popped = stack.Pop();
                     }
 
-                   if(popped > next)
+                    if (popped > next)
                     {
                         stack.Push(popped);
-                    } 
+                    }
                 }
                 stack.Push(next);
             }
 
             while (stack.Count > 0)
             {
-                Console.WriteLine(stack.Pop() + "--> "+ "-1");
+                Console.WriteLine(stack.Pop() + "--> " + "-1");
             }
         }
+
+      
     }
 }
